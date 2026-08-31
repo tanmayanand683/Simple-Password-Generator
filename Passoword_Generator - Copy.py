@@ -10,10 +10,7 @@ def password_gen():
     password=""
     if sp_character_value.get()==1:
         for i in range(int(password_length_value.get())):
-            a=random.choice(string.ascii_letters)
-            b=random.choice("!@#$%&")
-            c=random.choice(string.digits)
-            password+=random.choice(a + b + c)
+            password+=random.choice(string.ascii_letters + "!@#$%&" + string.digits)
     else:
         for i in range(int(password_length_value.get())):
             password+=random.choice(string.ascii_letters + string.digits)
@@ -63,7 +60,7 @@ windows=Tk()
 windows.title("Password Generator")
 windows.geometry("300x300")
 windows.resizable(False,False)
-icon=PhotoImage(file="D:\\Main\\Work\\Programs\\Python\\icon.png")
+icon=PhotoImage(file="D:\\Main\\Work\\Programs\\Python\\Projects\\Password Generator\\icon.png")
 windows.iconphoto(True,icon)
 body_font=("Arial, 14")
 
@@ -144,7 +141,7 @@ clipboard.pack()
 
 #Reset Button
 
-reset_icon=PhotoImage(file="D:\\Main\\Work\\Programs\\Python\\reset.png")
+reset_icon=PhotoImage(file="D:\\Main\\Work\\Programs\\Python\\Projects\\Password Generator\\reset.png")
 reset=Button(windows,
             image=reset_icon,
             command=reset)
