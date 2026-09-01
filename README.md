@@ -29,7 +29,7 @@ Password-Generator/
 ## ▶️ How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/Password-Generator.git
+   git clone https://github.com/tanmayanand683/Password-Generator.git
    cd Password-Generator
 2. Run the program:
 
